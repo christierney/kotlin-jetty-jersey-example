@@ -29,6 +29,8 @@ dependencies {
     compile "org.glassfish.jersey.containers:jersey-container-jetty-http:2.23.1"
     compile "org.glassfish.jersey.media:jersey-media-json-jackson:2.23.1"
     compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.5.5-2"
+
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 }
 
 task wrapper(type: Wrapper) {
