@@ -22,6 +22,9 @@ jar {
 
 repositories {
     jcenter()
+    maven {
+        url "http://repository.jetbrains.com/all"
+    }
 }
 
 dependencies {
@@ -31,6 +34,7 @@ dependencies {
     compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.5.5-2"
 
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testCompile "org.jetbrains.spek:spek:1.0.25"
 }
 
 task wrapper(type: Wrapper) {
