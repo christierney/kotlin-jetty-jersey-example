@@ -26,3 +26,8 @@ or
       "msg" : "amanap",
       "date" : "1984-04-14T15:42:00.000+0000"
     }
+
+## gradle
+
+The default build file is currently build.gradle.kts, written in Kotlin. To use the groovy file, add `-b build.gradle`
+to gradle commands.
