@@ -44,5 +44,4 @@ dependencies {
     testCompile("org.jetbrains.spek:spek:1.0.25")
 }
 
-inline fun <reified T : Task> Project.configureTask(name: String, configuration: T.() -> Unit) = (tasks.findByName(name) as T).configuration()
-inline fun Project.jar(configuration: Jar.() -> Unit) = configureTask("jar", configuration)
+inline fun Project.jar(crossinline configuration: Jar.() -> Unit) = tasks.withType(configuration)
