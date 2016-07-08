@@ -1,5 +1,4 @@
 import org.gradle.api.Project
-import org.gradle.api.Task
 import org.gradle.jvm.tasks.Jar
 
 buildscript {
